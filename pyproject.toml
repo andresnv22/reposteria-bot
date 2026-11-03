@@ -1,0 +1,20 @@
+[project]
+name = "reposteria-bot"
+version = "0.1.0"
+description = "Asistente de IA que atiende clientes y toma pedidos para una repostería"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic",
+    "fastapi",
+    "google-genai>=2.34.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+sheets = ["gspread"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

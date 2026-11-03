@@ -1,0 +1,10 @@
+.env
+.venv/
+*.db
+pedidos.csv
+__pycache__/
+.pytest_cache/
+.claude/
+.DS_Store
+*.log*
+credenciales*.json
